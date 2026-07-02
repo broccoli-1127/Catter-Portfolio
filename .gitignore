@@ -1,0 +1,8 @@
+node_modules
+dist
+dist-ssr
+.vs/
+.env
+.env.*
+.DS_Store
+*.log
