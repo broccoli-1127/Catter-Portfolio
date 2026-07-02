@@ -1,0 +1,135 @@
+.cardWrapper {
+	position: relative;
+	width: 340px;
+	height: 580px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.swipe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.catCard {
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	width: 320px;
+	height: 560px;
+	font-family: "Arial", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* Image container */
+.imageContainer {
+	position: relative;
+	border-radius: 16px;
+	overflow: hidden;
+	height: 240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.catImage {
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+/* Heart icon */
+.heartIcon {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 36px;
+	height: 36px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.4rem;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+
+.heartIcon:hover {
+	background-color: #ffe6e6;
+	transform: scale(1.05);
+}
+
+/* Cat info section */
+.catInfo {
+	margin-top: 0.5rem;
+	text-align: left;
+}
+
+.nameRow {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.catName {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.femaleIcon {
+	font-size: 1.2rem;
+	color: #e75480;
+	background-color: #fce4ec;
+	border-radius: 50%;
+	padding: 0.3rem 0.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.location {
+	color: #666;
+	font-size: 0.9rem;
+	margin-top: 0.2rem;
+}
+
+/* Description box */
+.description {
+	background-color: #fdf5f5;
+	border-radius: 12px;
+	padding: 0.8rem;
+	font-size: 0.9rem;
+	color: #444;
+}
+
+.moreDetails {
+	font-size: 0.85rem;
+	color: #888;
+	margin-top: 0.6rem;
+	font-style: italic;
+}
+
+/* Peek effect */
+.topCard {
+	z-index: 3;
+	transform: translateX(0);
+}
+
+.nextCard {
+	z-index: 2;
+	transform: translateX(20px) scale(0.95);
+	transition: transform 0.3s ease;
+}
+
+.hiddenCard {
+	z-index: 1;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateX(0);
+}
