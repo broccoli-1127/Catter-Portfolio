@@ -5,9 +5,6 @@ import { Heart, X, ChevronLeft, CheckCircle2, RotateCcw } from "lucide-react";
 import { cats as initialCats } from "../data/cats";
 import { useFormContext } from "./FormContext";
 import { Card } from "@/components/ui/card";
-import fs from "fs/promises";
-import path from "path";
-import { boolean } from "zod";
 
 const STORAGE_KEY = "currCats";
 const STORAGE_VER_KEY = "currCats_version";
